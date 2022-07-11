@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "app-go"
+  description: "hdushdudhdefeferf"
+  annotations:
+    github.com/project-slug: vitor-savicki/app-go
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: dev-app-go
+    backstage.io/kubernetes-id: "app-go"
+    sonarqube.org/project-key: "app-go"
+    grafana/tag-selector: "kubernetes"
+    prometheus.io/rule: container_cpu_usage_seconds_total{namespace="app-go"}
+    prometheus.io/alert: all
+  links:
+    - url: https://app-go.vitor-savicki.eti.br
+      title: Website
+      icon: Website
+    - url: https://grafana.vitor-savicki.eti.br/
+      title: Dashboard
+      icon: dashboard      
+    - url: https://alerts.vitor-savicki.eti.br/
+      title: Alerts
+      icon: alert 
+    - url: https://argocd.vitor-savicki.eti.br/applications/dev-app-go?resource=
+      title: ArgoCD
+      icon: cloud
+  tags:
+    - golang
+    - "teste"
+    - "service"
+    - "experimental"
+spec:
+  system: "teste"
+  type:  "service"
+  lifecycle: "experimental"
+  owner: "vitor-savicki"
